@@ -1,6 +1,6 @@
 from typing import List
 
-def reconstruct(arnSeq:str, prots:List[str]):
+def reconstruct(arnSeq:str, prots:List[str]) -> str :
     for prot in prots:
         arnSeq += mostProbableNucl(prot) #What about overlaping prot and triplets?
     
